@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+    <title>Forside</title>
+</head>
+<body>
+    <header>
+        <h1>Tittel</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="file:///C:/Users/henla/OneDrive/Dokumenter/GitHub/Webutvikling2024Henrik/HTML5Ovelse/index.html">Hjem</a>
+                </li>
+                <li>
+                    <a href="ovelse2.html">Validering</a>
+                </li>
+                <li>
+                    <a href="#">nettside mal</a>
+                </li>
+                <li>
+                    <a href="#">Kontakt Oss</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h3>Validering</h3>
+        </article>
+            <h3>Kontakt oss</h3>
+        <article>
+            <h3>Studieplan</h3>
+        </article>
+        
+        <section>
+            <h2>input liste</h2>
+            <form method="post">
+                <label for="navn">Navn:</label>
+                <input type="text" name="navn" placeholder="Ola Normann.." id="navn" maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                <label>
+                    E-post:
+                    <input type="email" name="email" placeholder="eksempel@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                </label>
+                <label>
+                    Passord:
+                    <input minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                </label>
+                <label>
+                    Alder:
+                    <input type="number" min="18" max="99" required>
+                </label>
+                <label>
+                    TlfNr:
+                    <input type="number" pattern="[0-9]{8,12}" required>
+                </label>
+                <label>
+                    fødselsdato:
+                    <input type="date" max="2023-12-31" required>
+                </label>
+                <label>
+                    Mann
+                    <input type="radio" name="valg">
+                </label>
+                <label>
+                    Kvinne
+                    <input type="radio" name="valg">
+                </label>
+                <label>
+                    Annet
+                    <input type="radio" name="valg">
+                </label>
+                <lable>
+                    Land:
+                    <select name="land" id="">
+                        <option value="Norge">Norge</option>
+                        <option value="Sverige">Sverige</option>
+                        <option value="Danmark">Danmark</option>
+                    </select>
+                </lable>
+                <label>
+                    Presonvern:
+                    <input type="checkbox" required>
+                </label>
+                <label>
+                    <input type="submit" value="Send inn skjema">
+                </label>
+
+            
+            </form>
+
+        </section>
+
+    </main>
+    <side>
+    
+        <section>
+            <h2>les mer på google</h2>
+            <ul>
+                <li>
+                    <a href="https://www.google.co.uk/search?q=html5&sca_esv=de788ad3f268e4d9&sca_upv=1&source=hp&ei=kqrVZpOOJoGn1fIPhK-smQk&iflsig=AL9hbdgAAAAAZtW4om8x20okUBP1XABK0wQ5KHQ9AAvJ&ved=0ahUKEwiTn-_PnKSIAxWBU1UIHYQXK5MQ4dUDCA4&uact=5&oq=html5&gs_lp=Egdnd3Mtd2l6IgVodG1sNTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIvBxQ6QNY3xRwAXgAkAEAmAFGoAG5AqoBATW4AQPIAQD4AQGYAgWgAtACqAIAwgILEC4YgAQY0QMYxwHCAgUQLhiABMICDhAuGIAEGNEDGNQCGMcBmAMCkgcBNaAHqR4&sclient=gws-wiz">HTML5</a>
+                </li>
+            </ul>
+        </section>
+    </side>
+    <footer>
+        <p>Henrik Thane Lange</p>
+        <p>henlang1303@outlook.com</p>
+    </footer>
+
+</body>
+
+</html>
